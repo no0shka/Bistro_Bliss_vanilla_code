@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Toastr CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+    <!-- contact page css  -->
+    <link rel="stylesheet" href="/css/contact.css" />
+
+    <!-- nav section css  -->
+    <link rel="stylesheet" href="../css/header_nav.css" />
+
+    <!-- footer section css  -->
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <!-- font awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="../images/icon.png" />
+
+    <title>Bistro Bliss</title>
+  </head>
+  <body>
+    <!-- nav-bar section  -->
+    <header>
+      <div class="home-header-info">
+        <p><i class="fa-solid fa-phone"></i> (414) 857 - 0107</p>
+        <p><i class="fa-solid fa-envelope"></i> yummy@bistrobliss</p>
+      </div>
+      <div class="home-header-links">
+        <a href="https://www.twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.facebook.com" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.github.com" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </header>
+    <nav>
+      <div class="nav-logo">
+        <img src="/images/logo.png" alt="" />
+        <h1 class="nav-h1">Bistro Bliss</h1>
+      </div>
+      <div id="nav-linkss">
+        <a href="/index.html">Home</a>
+        <a href="/pages/about.html">About</a>
+        <a href="/pages/menu.html">Menu</a>
+        <a href="/pages/Blog.html">Pages</a>
+        <a id="selected" href="/pages/contact.html">Contact</a>
+        <a href="/pages/cart.html"><i class="fas fa-shopping-cart"></i></a>
+
+        <a class="book-table" href="book.html">Book A Table</a>
+      </div>
+      <button href="#" id="nav-bars" onclick="show_or_hide()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- main section  -->
+    <main>
+      <section class="contact-hero-section">
+        <h2>Contact Us</h2>
+        <p>
+          We consider all the drivers of change gives you the components you
+          need to change to create a truly happens.
+        </p>
+      </section>
+
+      <form class="contact-form">
+        <div class="contact-row">
+          <div class="contact-name-label">
+            <label>Name</label>
+            <input
+              type="text"
+              class="contact-user-data"
+              id="contactUserName"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="contact-email-label">
+            <label>Email</label>
+            <input
+              type="email"
+              id="contactUserEmail"
+              class="contact-user-data"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+        </div>
+
+        <label>Subject</label>
+        <input
+          type="text"
+          id="contactUserSubject"
+          class="contact-text-data"
+          placeholder="Write a subject"
+          required
+        />
+        <label>Message</label>
+        <textarea
+          name="message"
+          id="contactUserMessage"
+          class="contact-text-data"
+          placeholder="Write your message"
+          required
+        ></textarea>
+
+        <input
+          type="submit"
+          value="Send"
+          class="contact-submit-btn"
+          onclick="send()"
+        />
+      </form>
+      <section class="contact-info-section">
+        <article>
+          <h4>Call Us:</h4>
+          <p class="contact-phone">+1-234-567-8900</p>
+        </article>
+        <article>
+          <h4>Hours:</h4>
+          <p class="contact-info-detailes">Mon-Fri: 11am - 8pm</p>
+          <p class="contact-info-detailes">Sat, Sun: 9am - 10pm</p>
+        </article>
+        <article>
+          <h4>Our Location:</h4>
+          <p class="contact-info-detailes">123 Bridge Street</p>
+          <p class="contact-info-detailes">Nowhere Land, LA 12345</p>
+          <p class="contact-info-detailes">United States</p>
+        </article>
+      </section>
+    </main>
+    <!-- footer section -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <section class="footer-logo-section">
+          <p class="footer-logo">
+            <img src="/images/footer/logo.svg" />Bistro Bliss
+          </p>
+          <p class="footer-logo-paragraph">
+            In the new era of technology we look a in the future with certainty
+            and pride to for our company and.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.github.com" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </section>
+
+        <section class="footer-links-section">
+          <p>Pages</p>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/menu.html">Menu</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="/pages/Blog.html">Blog</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="#">Delivery</a></li>
+          </ul>
+        </section>
+      </button>
+          </ul>
+        </section>
+        <section class="footer-links-section">
+          <p>Utility Pages</p>
+          <ul>
+            <li><a href="#">Start Here</a></li>
+            <li><a href="#">Styleguide</a></li>
+            <li><a href="#">Password Protected</a></li>
+            <li><a href="#">404 Not Found</a></li>
+            <li><a href="">License</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">View More</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-img-section">
+          <p>Follow Us On Instagram</p>
+          <div class="footer-img">
+            <img src="/images/footer/img-1.png" />
+            <img src="/images/footer/img-2.png" />
+            <img src="/images/footer/img-3.png" />
+            <img src="/images/footer/img-4.png" />
+          </div>
+        </section>
+      </div>
+      <section class="footer-bottom col-s-12">
+        <hr class="footer-line" />
+        <p>Copyright © 2023 Hashtag Developer. All Rights Reserved.</p>
+      </section>
+    </footer>
+
+    <!-- Toastr JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- nav JS  -->
+    <script src="/js/nav-bar.js"></script>
+
+    <!-- contact JS  -->
+    <script src="../js/contact.js"></script>
+  </body>
+</html>

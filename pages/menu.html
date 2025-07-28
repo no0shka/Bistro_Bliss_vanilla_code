@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/header_nav.css">
+  <link rel="icon" href="../images/icon.png">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="../css/footer.css">
+  <!-- Toastr CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+    <!-- font awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+</head>
+<body>
+
+    <header>
+        <div class="home-header-info">
+        <p><i class="fa-solid fa-phone"></i> (414) 857 - 0107</p>
+        <p><i class="fa-solid fa-envelope"></i> yummy@bistrobliss</p>
+    </div>
+    <div class="home-header-links">
+        <a href="https://www.twitter.com" target="_blank" ><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+        
+    </div>
+    </header>
+    <nav><div class="nav-logo">
+        <img src="../images/logo.png" alt="">
+        <h1 class="nav-h1">Bistro Bliss</h1></div>
+        <div id="nav-linkss">
+            <a  href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a  id="selected" href="menu.html">Menu</a>
+            <a href="Blog.html">Pages</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <a class="book-table" href="book.html">Book A Table</a>
+            </div>
+            <button href="#" id="nav-bars" onclick="show_or_hide()"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+
+    <section class="menu-section">
+      <h1>Our Menu</h1>
+      <p class="description">
+        We consider all the drivers of change gives you the components <br> you need to change to create a truly happens.
+      </p>
+
+    <div class="filter-buttons">
+      <button class="active">All</button>
+      <button>Breakfast</button>
+      <button>Main Dishes</button>
+      <button>Drinks</button>
+      <button>Desserts</button>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-item" data-category="Breakfast">
+        <img src="/images/Images menu/Fried Eggs.jpg" alt="Fried Eggs">
+        <h3>$9.99</h3>
+        <h4>Fried Eggs</h4>
+        <p>Made with eggs, <br> lettuce, salt and oil .</p>
+        <button
+            onclick="addToCart('Fried Eggs', '/images/Images menu/Fried Eggs.jpg', '9.99')"
+          >
+            <a><i class="fas fa-shopping-cart"></i></a>
+          </button>
+      </div>
+
+      <div class="menu-item" data-category="Main Dishes">
+        <img src="../images/Images menu/Hawaiian Pizza.jpg" alt="Hawaiian Pizza">
+        <h3>$15.99</h3>
+        <h4>Hawaiian Pizza</h4>
+        <p>Made with Tomato <br> sauce, mozzarella, pineapple,<br> ham and oregano .</p>
+        <button
+            onclick="addToCart('Hawaiian Pizza','/images/Images menu/Hawaiian Pizza.jpg', '15.99')"
+          >
+            <a><i class="fas fa-shopping-cart"></i></a>
+          </button>
+      </div>
+
+      <div class="menu-item" data-category="Drinks">
+        <img src="../images/Images menu/Martinez Cocktail.jpg" alt="Martinez Cocktail">
+        <h3>$7.25</h3>
+        <h4>Martinez Cocktail</h4>
+        <p>Made with Gin, sweet <br> vermouth, maraschino liqueur<br> and orange bitters.</p>
+        <button
+            onclick="addToCart('Martinez Cocktail', '/images/Images menu/Martinez Cocktail.jpg','7.25')"
+          >
+            <a><i class="fas fa-shopping-cart"></i></a>
+          </button>
+      </div>
+
+      <div class="menu-item" data-category="Desserts">
+        <img src="../images/Images menu/Butterscotch Cake.jpg" alt="Butterscotch Cake">
+        <h3>$20.99</h3>
+        <h4>Butterscotch Cake</h4>
+        <p>Made with Moist vanilla <br> sponge, butterscotch sauce <br> and caramel glaze.</p>
+        <button
+            onclick="addToCart('Butterscotch Cake','/images/Images menu/Butterscotch Cake.jpg', '20.99')"
+          >
+            <a><i class="fas fa-shopping-cart"></i></a>
+          </button>
+      </div>
+
+      <div class="menu-item" data-category="Drinks">
+        <img src="../images/Images menu/Mint Lemonade.jpg" alt="Mint Lemonade">
+        <h3>$5.89</h3>
+        <h4>Mint Lemonade</h4>
+        <p>Made with Fresh lemon <br> juice, mint leaves, sugar <br> syrup and crushed ice.</p>
+        <button
+            onclick="addToCart('Mint Lemonade', '/images/Images menu/Mint Lemonade.jpg','5.89')"
+          >
+            <a><i class="fas fa-shopping-cart"></i></a>
+          </button>
+      </div>
+
+      <div class="menu-item" data-category="Desserts">
+        <img src="../images/Images menu/Chocolate Icecream.jpg" alt="Chocolate Icecream">
+        <h3>$18.05</h3>
+        <h4>Chocolate Icecream</h4>
+        <p>Made with Rich  <br>chocolate, creamy milk base <br> and cocoa nibs.</p>
+        <button
+            onclick="addToCart('Chocolate Icecream','/images/Images menu/Chocolate Icecream.jpg', '18.05')"
+          >
+            <a> <i class="fas fa-shopping-cart cart-icon"></i></a>
+          </button>
+      </div>
+
+      <div class="menu-item" data-category="Main Dishes">
+        <img src="../images/Images menu/Cheese Burger.jpg" alt="Cheese Burger">
+        <h3>$12.55</h3>
+        <h4>Cheese Burger</h4>
+        <p>Made with Beef patty<br>, melted cheddar, lettuce,<br> tomato and soft bun.</p>
+        <button
+            onclick="addToCart('Cheese Burger','/images/Images menu/Cheese Burger.jpg', '12.55')"
+          >
+            <a><i class="fas fa-shopping-cart"></i></a>
+          </button>
+      </div>
+
+      <div class="menu-item" data-category="Breakfast">
+        <img src="../images/Images menu/Classic Waffles.jpg" alt="Classic Waffles">
+        <h3>$12.99</h3>
+        <h4>Classic Waffles</h4>
+        <p>Made with Golden <br> waffles, maple syrup <br>and whipped cream.</p>
+        <button
+            onclick="addToCart('Classic Waffles','/images/Images menu/Classic Waffles.jpg', '12.99')"
+          >
+            <a><i class="fas fa-shopping-cart"></i></a>
+          </button>
+      </div>
+    </div>
+  </section>
+      <!--2nd section-->
+       <div class="container">
+         <div class="left-text">
+           <h2>You can order <br>through apps</h2>
+           <p>Hungry? We’ve partnered with the best delivery apps to bring your cravings straight to you! Browse our full menu on apps, and enjoy fast delivery and unbeatable taste — wherever you are.
+
+.</p>
+         </div>
+
+         <div class="apps-grid">
+           <div class="app-box"><img src="../images/Images menu/uber-eats-seeklogo.png" alt="Uber Eats"></div>
+           <div class="app-box"><img src="../images/Images menu/grubhub-seeklogo.png" alt="Grubhub"></div>
+           <div class="app-box"><strong>Postmates</strong></div>
+           <div class="app-box"><img src="../images/Images menu/doordash-seeklogo.png" alt="DoorDash"></div>
+           <div class="app-box"><img src="../images/Images menu/foodpanda-seeklogo.png" alt="Foodpanda"></div>
+           <div class="app-box"><img src="../images/Images menu/deliveroo-logo.svg" alt="Deliveroo"></div>
+           <div class="app-box"><img src="../images/Images menu/instacart-1.svg" alt="Instacart"></div>
+           <div class="app-box"><img src="../images/Images menu/just-eat-seeklogo.png" alt="Just Eat"></div>
+           <div class="app-box"><img src="../images/Images menu/didi-chuxing.svg" alt="DiDi Food">
+            <span class="app-text">Food</span>
+          </div>
+         </div>
+       </div>
+   
+      
+      <!--footer -->
+        <footer class="footer">
+      <div class="footer-container">
+        <section class="footer-logo-section">
+          <p class="footer-logo">
+            <img
+              src="../images/footer/logo.svg"
+            />Bistro Bliss
+          </p>
+          <p class="footer-logo-paragraph">
+            In the new era of technology we look a in the future with certainty
+            and pride to for our company and.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.github.com" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </section>
+
+        <section class="footer-links-section">
+          <p>Pages</p>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="../../../Pages/Contact/contact.html">Contact</a></li>
+            <li><a href="#">Delivery</a></li>
+          </ul>
+        </section>
+        <section class="footer-links-section">
+          <p>Utility Pages</p>
+          <ul>
+            <li><a href="#">Start Here</a></li>
+            <li><a href="#">Styleguide</a></li>
+            <li><a href="#">Password Protected</a></li>
+            <li><a href="#">404 Not Found</a></li>
+            <li><a href="">License</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">View More</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-img-section">
+          <p>Follow Us On Instagram</p>
+          <div class="footer-img">
+            <img src="../images/footer/img-1.png" />
+            <img src="../images/footer/img-2.png" />
+            <img src="../images/footer/img-3.png" />
+            <img src="../images/footer/img-4.png" />
+          </div>
+        </section>
+      </div>
+      <section class="footer-bottom col-s-12">
+        <hr class="footer-line" />
+        <p>Copyright © 2023 Hashtag Developer. All Rights Reserved.</p>
+      </section>
+    </footer>
+     <!-- Toastr JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- nav JS  -->
+    <script src="../js/nav-bar.js"></script>
+    <script src="js/nav-bar.js"></script>
+    <script src="../js/menu.js"></script>
+  
+</body>
+</html>

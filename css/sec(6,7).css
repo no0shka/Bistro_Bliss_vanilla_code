@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.titles {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 60.5px;
+  color: #2c2f24;
+}
+
+#testimonial {
+  padding: 5% 2%;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+#testimonial h2 {
+  max-width: 1600px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.reviews-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reviews {
+  background-color: #f9f9f7;
+  border-radius: 12px;
+  padding: 45px;
+  max-width: 430px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reviews h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -3%;
+  color: #ad343e;
+  margin-bottom: 20px;
+}
+
+.reviews p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #414536;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: none;
+  background-color: #dbdfd0;
+  height: 1px;
+}
+
+.reviews-info {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10px;
+  gap: 30px;
+}
+
+.reviews-info h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2c2f24;
+}
+
+.reviews-info p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #414536;
+}
+
+.reviews-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+/* Our Blog & Articles */
+#blogs {
+  background-color: #f9f9f7;
+  padding: 100px;
+}
+
+.header-button {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.header-button button {
+  background-color: #ad343e;
+  padding: 20px 32px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 118px;
+  border: 1px solid #ad343e;
+}
+
+.header-button button:hover {
+  background-color: #902b34;
+  cursor: pointer;
+}
+
+.blogs-container {
+  display: grid;
+  grid-template-areas:
+    "burger burger burger fries tenders"
+    "burger burger burger cheesecake pizza";
+  gap: 30px;
+}
+
+.blogs-container > div {
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content-container {
+  padding: 25px 30px;
+}
+
+.burger {
+  grid-area: burger;
+  cursor: pointer;
+}
+
+.fries {
+  grid-area: fries;
+}
+
+.tenders {
+  grid-area: tenders;
+}
+
+.cheesecake {
+  grid-area: cheesecake;
+}
+
+.pizza {
+  grid-area: pizza;
+}
+
+.blog-img {
+  margin-bottom: 5px;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.burger-img {
+  height: 520px;
+}
+
+.date {
+  color: #737865;
+  margin-bottom: 15px;
+}
+
+.blogs-container * h5 {
+  font-size: 20px;
+  line-height: 26px;
+  color: #2c2f24;
+  margin-bottom: 15px;
+}
+
+.blogs-container * p {
+  line-height: 24px;
+  color: #414536;
+}
+
+@media (max-width: 1400px) {
+  .reviews {
+    width: 360px;
+  }
+}
+
+/* Tablet & Laptop View (1024px and below) */
+@media (max-width: 1024px) {
+  #blogs {
+    padding: 80px 60px;
+  }
+
+  .blogs-container {
+    grid-template-areas:
+      "burger burger"
+      "fries tenders"
+      "cheesecake pizza";
+  }
+
+  .burger .blog-img {
+    height: 450px;
+  }
+}
+
+/* Large Tablet View (768px and below) */
+@media (max-width: 768px) {
+  #blogs {
+    padding: 60px 40px;
+  }
+
+  .header-button {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .titles {
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .blogs-container {
+    grid-template-areas:
+      "burger burger"
+      "burger burger"
+      "fries tenders"
+      "cheesecake pizza";
+  }
+
+  .burger-img {
+    height: 400px;
+  }
+}
+
+/* Mobile View (480px and below) */
+@media (max-width: 480px) {
+  #blogs {
+    padding: 50px 20px;
+  }
+
+  .titles {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .header-button button {
+    padding: 16px 24px;
+    font-size: 14px;
+  }
+
+  .blogs-container {
+    grid-template-areas:
+      "burger"
+      "fries"
+      "tenders"
+      "cheesecake"
+      "pizza";
+    gap: 20px;
+  }
+
+  .burger-img {
+    height: 200px;
+  }
+
+  .content-container {
+    padding: 20px;
+  }
+
+  .blogs-container * h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,76 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: serif;
+      background-color: white;
+      color: #222;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #f8f6f3;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      color: #000;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .checkout-form-container {
+      background-color: white;
+      width: 90%;
+      max-width: 750px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(34, 34, 34, 0.1);
+    }
+
+    .checkout-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .checkout-form label {
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: block;
+      color: #000;
+    }
+
+    .checkout-form input,
+    .checkout-form select {
+      width: 100%;
+      padding: 10px 15px;
+      border-radius: 25px;
+      border: 1px solid rgb(65, 64, 64);
+      color: #000;
+    }
+
+    .checkout-button {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .checkout-button button {
+      background-color: rgb(190, 52, 52);
+      color: white;
+      border: none;
+      padding: 12px 40px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+    }

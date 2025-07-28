@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Playfair Display";
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+.container {
+  padding-top: 100px;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.left-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  max-width: 750px;
+  position: relative;
+}
+
+.left-images img:first-child {
+  grid-row: span 2;
+  width: 431px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.left-images img:nth-child(2) {
+  width: 290px;
+  height: 333px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.left-images img:nth-child(3) {
+  width: 290px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.right-content {
+  max-width: 400px;
+  flex-shrink: 0;
+  padding-top: 100px;
+}
+
+.right-content h2 {
+  font-family: "playfair display";
+  font-weight: 500;
+  font-size: 55px;
+  margin-bottom: 15px;
+  color: #2c2f24;
+}
+
+.right-content p {
+  font-size: 16px;
+  color: #414536;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.feature span {
+  background-color: #ad343e;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.feature-text {
+  font-size: 20px;
+  color: #2c2f24;
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-images {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+    max-width: 100%;
+  }
+
+  .left-images img:first-child {
+    grid-row: span 2;
+    width: 100%;
+    height: auto;
+  }
+
+  .left-images img:nth-child(2),
+  .left-images img:nth-child(3) {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-content {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .right-content h2 {
+    font-size: 45px;
+    line-height: 1.2;
+  }
+}

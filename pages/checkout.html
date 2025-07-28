@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bistro Bliss - Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/checkout.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+      <link rel="icon" href="../images/icon.png" />
+
+  <link rel="stylesheet" href="../css/header_nav.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="home-header-info">
+      <p><i class="fa-solid fa-phone"></i> (414) 857 - 0107</p>
+      <p><i class="fa-solid fa-envelope"></i> yummy@bistrobliss</p>
+    </div>
+    <div class="home-header-links">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-logo">
+      <img src="../images/logo.png" alt="Logo" />
+      <h1 class="nav-h1">Bistro Bliss</h1>
+    </div>
+    <div id="nav-linkss">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="Blog.html">Pages</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      <a class="book-table" href="book.html">Book A Table</a>
+    </div>
+      <button href="#" id="nav-bars" onclick="show_or_hide()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+  </nav>
+
+  <section class="hero">
+    <h1>🧾 Checkout</h1>
+    <p>Please fill in your details to complete your order.</p>
+  </section>
+
+  <section class="checkout-form-container">
+    <form class="checkout-form">
+      <div>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Your Name" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="0123-456-789" required />
+      </div>
+      <div>
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Street Address" required />
+      </div>
+      <div>
+        <label for="city">City</label>
+        <input type="text" id="city" placeholder="Your City" required />
+      </div>
+      <div>
+        <label for="payment">Payment Method</label>
+        <select id="payment" required>
+          <option value="">Select</option>
+          <option>Cash on Delivery</option>
+          <option>Credit Card</option>
+          <option>PayPal</option>
+        </select>
+      </div>
+      <div class="checkout-button">
+        <button type="submit">Place Order</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <section class="footer-logo-section">
+        <p class="footer-logo">
+          <img src="../images/logo.png" alt="Logo" /> Bistro Bliss
+        </p>
+        <p class="footer-logo-paragraph">
+          In the new era of technology we look a in the future with certainty
+          and pride to for our company and.
+        </p>
+        <div class="footer-social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </section>
+
+      <section class="footer-links-section">
+        <p>Pages</p>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Delivery</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-links-section">
+        <p>Utility Pages</p>
+        <ul>
+          <li><a href="#">Start Here</a></li>
+          <li><a href="#">Styleguide</a></li>
+          <li><a href="#">Password Protected</a></li>
+          <li><a href="#">404 Not Found</a></li>
+          <li><a href="#">License</a></li>
+          <li><a href="#">Changelog</a></li>
+          <li><a href="#">View More</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-img-section">
+        <p>Follow Us On Instagram</p>
+        <div class="footer-img">
+          <img src="../images/footer/img-1.png" />
+          <img src="../images/footer/img-2.png" />
+          <img src="../images/footer/img-3.png" />
+          <img src="../images/footer/img-4.png" />
+        </div>
+      </section>
+    </div>
+
+    <section class="footer-bottom col-s-12">
+      <hr class="footer-line" />
+      <p>Copyright © 2023 Hashtag Developer. All Rights Reserved.</p>
+    </section>
+  </footer>
+<script src="../js/nav-bar.js"></script>
+</body>
+</html>
