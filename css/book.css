@@ -1,5 +1,6 @@
 .hero {
   text-align: center;
+  margin: 0 10px;
   margin-top: 50px;
 }
 
@@ -25,8 +26,8 @@
 
 .booking-form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr;
+  gap: 25px;
 }
 
 .booking-form div {
@@ -35,7 +36,7 @@
 }
 
 .full-row {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 
 .booking-form label {
@@ -52,7 +53,7 @@
 }
 
 .checkout-button {
-  grid-column: span 2;
+  grid-column: span 1;
   text-align: center;
 }
 
@@ -80,4 +81,15 @@
   height: 200%;
   display: block;
   border-radius: 0;
+}
+@media (min-width:769px) {
+  .booking-form {
+  grid-template-columns: 1fr 1fr;
+}
+  .full-row {
+  grid-column: span 2;
+}
+.checkout-button {
+  grid-column: span 2;
+}
 }
