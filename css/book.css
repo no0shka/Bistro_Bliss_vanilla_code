@@ -84,6 +84,9 @@
   border-radius: 0;
 }
 @media (min-width:769px) {
+  .booking-form div {
+  width: 100%;
+}
   .booking-form {
   grid-template-columns: 1fr 1fr;
 }
